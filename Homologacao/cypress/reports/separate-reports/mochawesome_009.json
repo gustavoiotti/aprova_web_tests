@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-23T21:00:46.927Z",
+    "end": "2020-06-23T21:01:52.543Z",
+    "duration": 65616,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "45c3e14d-d7e2-4fef-949b-773b60ff9289",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/menu_rede.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/menu_rede.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+          "title": "Teste dos menus no painel principal por usuário REDE",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus de Rede",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Menus de Rede",
+              "timedOut": null,
+              "duration": 44228,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_rede();\ncy.seleciona_projSimulado();\ncy.wait(10000);\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Rede Demonstração')).to.exist;",
+              "err": {},
+              "uuid": "0de5480a-ca01-468d-8e4d-9f339a8a08e0",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Painel",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Acessar Painel",
+              "timedOut": null,
+              "duration": 262,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_painel_rede();",
+              "err": {},
+              "uuid": "9858132a-4b86-4c8f-b630-56d3fbb7d942",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados Gerais",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Acessar Resultados Gerais",
+              "timedOut": null,
+              "duration": 3840,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_resultados();",
+              "err": {},
+              "uuid": "f8dbfedf-2149-47cd-8ae5-6185e2ec4292",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados por Habilidade",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Acessar Resultados por Habilidade",
+              "timedOut": null,
+              "duration": 651,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_resultados_habilidades_rede();",
+              "err": {},
+              "uuid": "e1fa8d1a-0074-4b52-9474-7d47eaf7f289",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Calendário",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Acessar Calendário",
+              "timedOut": null,
+              "duration": 391,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_calendario();",
+              "err": {},
+              "uuid": "4c4f3e11-e607-4ec5-90b3-8d7f088b34d1",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Relatórios",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Acessar Relatórios",
+              "timedOut": null,
+              "duration": 13432,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_relatorios();",
+              "err": {},
+              "uuid": "6c4588ab-45ab-4cd7-8f93-b5f4c14d7860",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo FAQ",
+              "fullTitle": "Teste dos menus no painel principal por usuário REDE Acessar Conteúdo FAQ",
+              "timedOut": null,
+              "duration": 882,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_ajuda();",
+              "err": {},
+              "uuid": "f601919e-054d-4c40-864d-2eef85ebf928",
+              "parentUUID": "51a219f2-45dc-48cf-936a-b4b387ddf3ea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0de5480a-ca01-468d-8e4d-9f339a8a08e0",
+            "9858132a-4b86-4c8f-b630-56d3fbb7d942",
+            "f8dbfedf-2149-47cd-8ae5-6185e2ec4292",
+            "e1fa8d1a-0074-4b52-9474-7d47eaf7f289",
+            "4c4f3e11-e607-4ec5-90b3-8d7f088b34d1",
+            "6c4588ab-45ab-4cd7-8f93-b5f4c14d7860",
+            "f601919e-054d-4c40-864d-2eef85ebf928"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 63686,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

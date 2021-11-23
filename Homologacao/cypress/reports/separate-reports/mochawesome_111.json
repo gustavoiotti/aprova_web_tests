@@ -1,0 +1,276 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 9,
+    "passes": 5,
+    "pending": 0,
+    "failures": 4,
+    "start": "2020-09-24T14:54:14.841Z",
+    "end": "2020-09-24T14:55:50.669Z",
+    "duration": 95828,
+    "testsRegistered": 9,
+    "passPercent": 55.55555555555556,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08b59d8f-5386-4a05-b676-0b4763f9749f",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/progressao.spec.js",
+      "file": "cypress/integration/Aprova_cyp/progressao.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Teste de progressão",
+          "fullTitle": "Teste de progressão",
+          "timedOut": null,
+          "duration": 33774,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.acessa_aprova();\ncy.logar_instituicao();\ncy.seleciona_projProgressao();\ncy.wait(5000);\ncy.verifica_dialog_contato_if();\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Escola Modelo 01')).to.exist;",
+          "err": {},
+          "uuid": "9cbc1fc5-5737-4c8a-8252-af56c7e9f99d",
+          "parentUUID": "08b59d8f-5386-4a05-b676-0b4763f9749f",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Revisão Geral",
+          "fullTitle": "Revisão Geral",
+          "timedOut": null,
+          "duration": 531,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.revisao_geral();",
+          "err": {},
+          "uuid": "a62c45df-abc7-447a-82d7-1759d2612980",
+          "parentUUID": "08b59d8f-5386-4a05-b676-0b4763f9749f",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Revisão de Alunos",
+          "fullTitle": "Revisão de Alunos",
+          "timedOut": null,
+          "duration": 429,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.revisao_alunos();",
+          "err": {},
+          "uuid": "9afeae06-149b-471b-a720-a030c938568a",
+          "parentUUID": "08b59d8f-5386-4a05-b676-0b4763f9749f",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Revisão de Progressão",
+          "fullTitle": "Revisão de Progressão",
+          "timedOut": null,
+          "duration": 352,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.revisao_progressao();",
+          "err": {},
+          "uuid": "82da6fe3-8b90-426f-82e1-ef0159f59c40",
+          "parentUUID": "08b59d8f-5386-4a05-b676-0b4763f9749f",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [
+        {
+          "uuid": "e19f9994-0552-45a7-8256-e7faf698b035",
+          "title": "Projeto Progressão",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Revisão de Turmas",
+              "fullTitle": "Projeto Progressão Revisão de Turmas",
+              "timedOut": null,
+              "duration": 25275,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_instituicao();\ncy.seleciona_projProgressao();\ncy.wait(5000);\ncy.verifica_dialog_contato_if();\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Escola Modelo 01')).to.exist;",
+              "err": {},
+              "uuid": "1b88c21b-4379-4faa-8b4f-c8f9a1e82626",
+              "parentUUID": "e19f9994-0552-45a7-8256-e7faf698b035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Nova Turma",
+              "fullTitle": "Projeto Progressão Nova Turma",
+              "timedOut": null,
+              "duration": 8498,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.cria_turma();",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<td _ngcontent-c34=\"\">...</td>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<td _ngcontent-c34=\"\">...</td>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:161594:26)\n    at ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150141:8)\n    at ensureDescendentsAndScroll (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150148:14)\n    at ensureElIsNotCovered (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150277:5)\n    at runAllChecks (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150414:52)\n    at retryActionability (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150429:16)\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10325:23)\n    at Function.Promise.attempt.Promise.try (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:7599:29)\n    at tryFn (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165710:24)\n    at whenStable (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165751:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165269:16\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8442:18)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:213:26)",
+                "diff": null
+              },
+              "uuid": "6464361b-3032-4610-8988-90402210d9ae",
+              "parentUUID": "e19f9994-0552-45a7-8256-e7faf698b035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Novo Login",
+              "fullTitle": "Projeto Progressão Novo Login",
+              "timedOut": null,
+              "duration": 14946,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.login_turma();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Nova Turma - login de Acesso' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Nova Turma - login de Acesso' but never did.\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:222:6)",
+                "diff": null
+              },
+              "uuid": "c36c12aa-db9e-4a83-a161-496ef233b532",
+              "parentUUID": "e19f9994-0552-45a7-8256-e7faf698b035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Editar turma",
+              "fullTitle": "Projeto Progressão Editar turma",
+              "timedOut": null,
+              "duration": 5125,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.editar_turma();",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<div _ngcontent-c34=\"\" class=\"nome-turma w-100-p\">Turma t...</div>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<div _ngcontent-c34=\"\" class=\"nome-turma w-100-p\">Turma t...</div>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:161594:26)\n    at ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150141:8)\n    at ensureDescendentsAndScroll (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150148:14)\n    at ensureElIsNotCovered (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150277:5)\n    at runAllChecks (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150414:52)\n    at retryActionability (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150429:16)\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10325:23)\n    at Function.Promise.attempt.Promise.try (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:7599:29)\n    at tryFn (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165710:24)\n    at whenStable (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165751:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165269:16\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8442:18)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:226:33)",
+                "diff": null
+              },
+              "uuid": "69c5e2cd-a11a-4134-a51b-ed47c667f9be",
+              "parentUUID": "e19f9994-0552-45a7-8256-e7faf698b035",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Excluir Turma",
+              "fullTitle": "Projeto Progressão Excluir Turma",
+              "timedOut": null,
+              "duration": 4944,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.excluir_turma();",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<div _ngcontent-c34=\"\" class=\"nome-turma w-100-p\">Turma t...</div>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<div _ngcontent-c34=\"\" class=\"nome-turma w-100-p\">Turma t...</div>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:161594:26)\n    at ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150141:8)\n    at ensureDescendentsAndScroll (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150148:14)\n    at ensureElIsNotCovered (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150277:5)\n    at runAllChecks (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150414:52)\n    at retryActionability (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:150429:16)\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10325:23)\n    at Function.Promise.attempt.Promise.try (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:7599:29)\n    at tryFn (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165710:24)\n    at whenStable (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165751:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:165269:16\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8442:18)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:249:33)",
+                "diff": null
+              },
+              "uuid": "46c085d5-647c-4f14-a08b-37eab5f6ef8e",
+              "parentUUID": "e19f9994-0552-45a7-8256-e7faf698b035",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1b88c21b-4379-4faa-8b4f-c8f9a1e82626"
+          ],
+          "failures": [
+            "6464361b-3032-4610-8988-90402210d9ae",
+            "c36c12aa-db9e-4a83-a161-496ef233b532",
+            "69c5e2cd-a11a-4134-a51b-ed47c667f9be",
+            "46c085d5-647c-4f14-a08b-37eab5f6ef8e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 58788,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [
+        "9cbc1fc5-5737-4c8a-8252-af56c7e9f99d",
+        "a62c45df-abc7-447a-82d7-1759d2612980",
+        "9afeae06-149b-471b-a720-a030c938568a",
+        "82da6fe3-8b90-426f-82e1-ef0159f59c40"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 35086,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

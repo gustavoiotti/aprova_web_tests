@@ -1,0 +1,247 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-06-26T00:36:29.122Z",
+    "end": "2020-06-26T00:38:48.261Z",
+    "duration": 139139,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4d377464-8b78-4929-948d-e783322bc847",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/aprova_menus.js",
+      "file": "cypress/integration/Aprova_cyp/aprova_menus.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b5cee24-b380-42b7-972c-622f287d46dd",
+          "title": "Testes menus Simulados e Av. Inicial",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Rede Simulado",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Rede Simulado",
+              "timedOut": null,
+              "duration": 25691,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('rede');\ncy.get('#mat-input-1').type('at04');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.get('.lista-projetos-dialog > :nth-child(4)').click(); //Seleciona projeto demo\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\n//Gestão\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Relatórios\ncy.get(':nth-child(4) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get('.group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get('.group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(5) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Simulados\n//Conteúdos\ncy.get(':nth-child(6) > .group-items > .nav-item > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD Está oculto\n//cy.get(':nth-child(4) > :nth-child(2) > .nav-group > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Conhecendo Aprova Brasil') //Conhecendo o Aprova",
+              "err": {},
+              "uuid": "3929b736-b971-495e-925c-0f005b882c4c",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rede Avaliação Inicial",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Rede Avaliação Inicial",
+              "timedOut": null,
+              "duration": 21719,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('rede');\ncy.get('#mat-input-1').type('at04');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.get('.lista-projetos-dialog > :nth-child(3)').click(); //Seleciona projeto Av. Diagnostica\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Relatórios\ncy.get(':nth-child(4) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get('.group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get('.group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por comparação'); //R. comparação\ncy.get('.group-items > :nth-child(4) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(5) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Simulados\n/////\n//Conteúdos\ncy.get(':nth-child(6) > .group-items > .nav-item > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD\n//cy.get(':nth-child(4) > :nth-child(2) > .nav-group > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Conhecendo Aprova Brasil') //Conhecendo o Aprova",
+              "err": {},
+              "uuid": "70c9146d-0dba-47a1-884e-a191367b4089",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Instituição Simulado",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Instituição Simulado",
+              "timedOut": null,
+              "duration": 21842,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('demo1');\ncy.get('#mat-input-1').type('H2VE3G');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.get('.lista-projetos-dialog > :nth-child(4)').click(); //Seleciona projeto demo\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\n//Gestão\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(7) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Relatórios\ncy.get(':nth-child(6) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get(':nth-child(6) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get(':nth-child(6) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\n//Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Simulados'); //Lista de simulados\n//cy.get(':nth-child(3) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Inserir Respostas') //Inserir Respostas\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(5) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Conteúdos\ncy.get(':nth-child(8) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Livro Digital'); //Livros digitais\ncy.get(':nth-child(8) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Atividades Complementares'); //At. complementares\ncy.get(':nth-child(8) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD\n//cy.get(':nth-child(4) > :nth-child(2) > .nav-group > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Conhecendo Aprova Brasil') //Conhecendo o Aprova",
+              "err": {},
+              "uuid": "2561f0c2-b04b-45c3-90ea-0c524d3a6c37",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Instituição Avaliação Inicial",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Instituição Avaliação Inicial",
+              "timedOut": null,
+              "duration": 1346,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('demo1');\ncy.get('#mat-input-1').type('H2VE3G');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.get('.lista-projetos-dialog > :nth-child(3)').click(); //Seleciona projeto Av. Diagnostica\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\n//Gestão\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(7) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Relatórios\ncy.get(':nth-child(6) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get(':nth-child(6) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get(':nth-child(6) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por comparação'); //R. Comparação\ncy.get(':nth-child(6) > .group-items > :nth-child(4) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\n//Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Simulados'); //Lista de simulados\n//cy.get(':nth-child(3) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Inserir Respostas') //Inserir Respostas\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(5) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Conteúdos\ncy.get(':nth-child(8) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Livro Digital'); //Livros digitais\ncy.get(':nth-child(8) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Atividades Complementares'); //At. complementares\ncy.get(':nth-child(8) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD\n//cy.get(':nth-child(4) > :nth-child(2) > .nav-group > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Conhecendo Aprova Brasil') //Conhecendo o Aprova",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://aprovabrasil-hmg.azurewebsites.net/app/login\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://aprovabrasil-hmg.azurewebsites.net/app/login\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:145372:25\n    at visitFailedByErr (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:144763:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:145352:13\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8497:18)\n    at _drainQueueStep (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:5091:12)\n    at _drainQueue (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:5084:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:5100:5)\n    at Async.drainQueues (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:4970:14)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/aprova_menus.js:132:8)",
+                "diff": null
+              },
+              "uuid": "ffa64cee-b48f-43b5-9fc1-1b0a022d01e7",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Regional Simulado",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Regional Simulado",
+              "timedOut": null,
+              "duration": 798,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('890163@avalia.com');\ncy.get('#mat-input-1').type('7YF7QD');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n}); // cy.get('.lista-projetos-dialog > :nth-child(4)').click() //Seleciona projeto demo\n// cy.get('.btn-projeto-dialog > .btn').click()\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\n//Gestão\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(5) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Relatórios\ncy.get(':nth-child(4) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get(':nth-child(4) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get('.group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\n//Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Conteúdos\ncy.get(':nth-child(6) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD\ncy.get(':nth-child(6) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Conhecendo Aprova Brasil'); //Conhecendo o Aprova",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://aprovabrasil-hmg.azurewebsites.net/app/login\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://aprovabrasil-hmg.azurewebsites.net/app/login\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:145372:25\n    at visitFailedByErr (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:144763:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:145352:13\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8497:18)\n    at _drainQueueStep (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:5091:12)\n    at _drainQueue (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:5084:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:5100:5)\n    at Async.drainQueues (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:4970:14)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/aprova_menus.js:180:8)",
+                "diff": null
+              },
+              "uuid": "776c4db6-8f20-4e4c-8658-2cf031e26ae6",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Professor Simulado",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Professor Simulado",
+              "timedOut": null,
+              "duration": 21321,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('293124@avalia.com');\ncy.get('#mat-input-1').type('ZTVEHB');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.get('.lista-projetos-dialog > :nth-child(3)').click(); //Seleciona projeto demo\n//cy.get('.lista-projetos-dialog > :nth-child(2)').click() //Seleciona projeto Av. inicial\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\n//Gestão\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Simulados'); //Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(6) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Relatórios\ncy.get(':nth-child(5) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get(':nth-child(5) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get(':nth-child(5) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\n//Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(4) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Conteúdos\ncy.get(':nth-child(7) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD\ncy.get(':nth-child(7) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Livro Digital'); // livro Digital\ncy.get(':nth-child(7) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Atividades Complementares'); //Conhecendo o Aprova",
+              "err": {},
+              "uuid": "64eb48bb-33cf-406a-bd51-c1957d661d57",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Professor Av. Inicial",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Professor Av. Inicial",
+              "timedOut": null,
+              "duration": 21055,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('293124@avalia.com');\ncy.get('#mat-input-1').type('ZTVEHB');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n}); //cy.get('.lista-projetos-dialog > :nth-child(3)').click() //Seleciona projeto demo\ncy.get('.lista-projetos-dialog > :nth-child(2)').click(); //Seleciona projeto Av. inicial\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche \ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(1) > .nav-link > .nav-link-title').contains('Painel'); //Painel\n//Gestão\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(2) > .nav-link > .nav-link-title').contains('Simulados'); //Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(3) > .nav-link > .nav-link-title').contains('Status das Aplicações'); //Status da ap.\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(6) > .nav-link > .nav-link-title').contains('Calendário'); //Calendário\n//Relatórios\ncy.get(':nth-child(5) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Desempenho por habilidade'); //R. habilidade\ncy.get(':nth-child(5) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Desempenho por aluno'); //R. Aluno\ncy.get(':nth-child(5) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Desempenho por questões abertas'); //R. Questões abertas\n//Simulados\ncy.get('.navbar-content > fuse-navigation > #main-navigation > :nth-child(4) > .nav-link > .nav-link-title').contains('Resultados'); //Resultados\n//Conteúdos\ncy.get(':nth-child(7) > .group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Ajuda'); //Manual da Plataforma\n//EAD\ncy.get(':nth-child(7) > .group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Livro Digital'); // livro Digital\ncy.get(':nth-child(7) > .group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Atividades Complementares'); //Atividades Complementares",
+              "err": {},
+              "uuid": "b6a97271-33c5-4db0-b5ef-42b5f2fb6f7d",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Instituição Personalizada Simulado",
+              "fullTitle": "Testes menus Simulados e Av. Inicial Instituição Personalizada Simulado",
+              "timedOut": null,
+              "duration": 20570,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net/app/login');\ncy.viewport(1000, 660);\ncy.get('#mat-input-0').type('ABA4717');\ncy.get('#mat-input-1').type('AB17');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.wait(2000);\ncy.get('[fxflex=\"1 0 auto\"] > .toggle-button-navbar > .mat-button-wrapper > .mat-icon').click(); //Menu sanduiche\ncy.get('.group-items > :nth-child(1) > .nav-link > .nav-link-title').contains('Livro Digital'); //livro digital\ncy.get('.group-items > :nth-child(2) > .nav-link > .nav-link-title').contains('Atividades Complementares'); //Atv. compl.\ncy.get('.group-items > :nth-child(3) > .nav-link > .nav-link-title').contains('Ajuda'); //Ajuda\ncy.get('.group-items > :nth-child(4) > .nav-link > .nav-link-title').contains('Conhecendo Aprova Brasil'); //conhecendo aprova",
+              "err": {},
+              "uuid": "9729a753-7e9a-46dd-966f-1248bcbff6ae",
+              "parentUUID": "0b5cee24-b380-42b7-972c-622f287d46dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3929b736-b971-495e-925c-0f005b882c4c",
+            "70c9146d-0dba-47a1-884e-a191367b4089",
+            "2561f0c2-b04b-45c3-90ea-0c524d3a6c37",
+            "64eb48bb-33cf-406a-bd51-c1957d661d57",
+            "b6a97271-33c5-4db0-b5ef-42b5f2fb6f7d",
+            "9729a753-7e9a-46dd-966f-1248bcbff6ae"
+          ],
+          "failures": [
+            "ffa64cee-b48f-43b5-9fc1-1b0a022d01e7",
+            "776c4db6-8f20-4e4c-8658-2cf031e26ae6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 134342,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

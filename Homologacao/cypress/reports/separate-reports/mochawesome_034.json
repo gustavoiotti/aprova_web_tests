@@ -1,0 +1,175 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 1,
+    "pending": 0,
+    "failures": 3,
+    "start": "2020-08-18T21:35:08.962Z",
+    "end": "2020-08-18T21:36:03.266Z",
+    "duration": 54304,
+    "testsRegistered": 4,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "04ee8bde-a264-4b72-bce3-f3151d518936",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/menu_conteudo.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/menu_conteudo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f4eccad-432c-4c12-b4c1-daf87454954c",
+          "title": "Teste dos menus por usuário CONTEÚDO",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus com usuário de Instituição CONTEÚDO",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Menus com usuário de Instituição CONTEÚDO",
+              "timedOut": null,
+              "duration": 36774,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_conteudo(); // cy.seleciona_projSimulado()\ncy.wait(10000);\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, ABAETE')).to.exist;",
+              "err": {},
+              "uuid": "473af8fd-7014-44a2-a093-5b986a2c4264",
+              "parentUUID": "1f4eccad-432c-4c12-b4c1-daf87454954c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo Livros Digitais",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Acessar Conteúdo Livros Digitais",
+              "timedOut": null,
+              "duration": 5148,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_livrodigital();",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<a _ngcontent-c17=\"\" class=\"nav-link mat-ripple ng-tns-c17-17 ng-star-inserted\" matripple=\"\" id=\"menu-conteudos\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<a _ngcontent-c17=\"\" class=\"nav-link mat-ripple ng-tns-c17-17 ng-star-inserted\" matripple=\"\" id=\"menu-conteudos\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:148655:26)\n    at ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137601:8)\n    at ensureDescendentsAndScroll (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137608:14)\n    at ensureElIsNotCovered (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137737:5)\n    at runAllChecks (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137874:52)\n    at retryActionability (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137889:16)\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Function.Promise.attempt.Promise.try (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:7658:29)\n    at tryFn (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151745:24)\n    at whenStable (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151786:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151309:16\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8501:18)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:275:3)",
+                "diff": null
+              },
+              "uuid": "9d92ec12-0726-44a1-8819-8d6cdb0a5d79",
+              "parentUUID": "1f4eccad-432c-4c12-b4c1-daf87454954c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo Atv Complementares",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Acessar Conteúdo Atv Complementares",
+              "timedOut": null,
+              "duration": 4747,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_projConteudo_atvComplementar();",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<a _ngcontent-c17=\"\" class=\"nav-link mat-ripple ng-tns-c17-17 ng-star-inserted\" matripple=\"\" id=\"menu-conteudos\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<a _ngcontent-c17=\"\" class=\"nav-link mat-ripple ng-tns-c17-17 ng-star-inserted\" matripple=\"\" id=\"menu-conteudos\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:148655:26)\n    at ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137601:8)\n    at ensureDescendentsAndScroll (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137608:14)\n    at ensureElIsNotCovered (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137737:5)\n    at runAllChecks (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137874:52)\n    at retryActionability (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137889:16)\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Function.Promise.attempt.Promise.try (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:7658:29)\n    at tryFn (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151745:24)\n    at whenStable (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151786:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151309:16\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8501:18)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:299:3)",
+                "diff": null
+              },
+              "uuid": "ca5c895b-1b6a-4686-9e6e-62e7635bf315",
+              "parentUUID": "1f4eccad-432c-4c12-b4c1-daf87454954c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo FAQ",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Acessar Conteúdo FAQ",
+              "timedOut": null,
+              "duration": 4732,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_ajuda();",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<a _ngcontent-c17=\"\" class=\"nav-link mat-ripple ng-tns-c17-17 ng-star-inserted\" matripple=\"\" id=\"menu-conteudos\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element:\n\n`<a _ngcontent-c17=\"\" class=\"nav-link mat-ripple ng-tns-c17-17 ng-star-inserted\" matripple=\"\" id=\"menu-conteudos\">...</a>`\n\nis being covered by another element:\n\n`<div class=\"cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing\"></div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:148655:26)\n    at ensureDescendents (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137601:8)\n    at ensureDescendentsAndScroll (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137608:14)\n    at ensureElIsNotCovered (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137737:5)\n    at runAllChecks (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137874:52)\n    at retryActionability (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:137889:16)\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Function.Promise.attempt.Promise.try (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:7658:29)\n    at tryFn (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151745:24)\n    at whenStable (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151786:12)\n    at http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:151309:16\n    at tryCatcher (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:10384:23)\n    at Promise._settlePromiseFromHandler (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8319:31)\n    at Promise._settlePromise (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8376:18)\n    at Promise._settlePromise0 (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8421:10)\n    at Promise._settlePromises (http://aprovabrasil-hmg.azurewebsites.net/__cypress/runner/cypress_runner.js:8501:18)\nFrom Your Spec Code:\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:336:3)",
+                "diff": null
+              },
+              "uuid": "d293a0f1-9e3b-4266-9607-f2070ea5219a",
+              "parentUUID": "1f4eccad-432c-4c12-b4c1-daf87454954c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "473af8fd-7014-44a2-a093-5b986a2c4264"
+          ],
+          "failures": [
+            "9d92ec12-0726-44a1-8819-8d6cdb0a5d79",
+            "ca5c895b-1b6a-4686-9e6e-62e7635bf315",
+            "d293a0f1-9e3b-4266-9607-f2070ea5219a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51401,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

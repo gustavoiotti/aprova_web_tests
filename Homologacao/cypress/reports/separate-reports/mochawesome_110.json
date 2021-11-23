@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-24T14:51:21.444Z",
+    "end": "2020-09-24T14:54:13.211Z",
+    "duration": 171767,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0803e288-6e1b-4272-8901-262cd5e6e103",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/login_valido.spec.js",
+      "file": "cypress/integration/Aprova_cyp/login_valido.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cdbddf39-2390-4c23-82e2-bb6d0319b472",
+          "title": "Logins validos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logar com Rede",
+              "fullTitle": "Logins validos Logar com Rede",
+              "timedOut": null,
+              "duration": 39307,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.logar_rede();\ncy.seleciona_projSimulado();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.verifica_dialog_contato_if();\ncy.contains('Olá, Rede Demonstração'); // DESLOGAR\ncy.deslogar();",
+              "err": {},
+              "uuid": "b92157f0-063c-4b0c-ac7a-c46339e9a4ec",
+              "parentUUID": "cdbddf39-2390-4c23-82e2-bb6d0319b472",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Escola",
+              "fullTitle": "Logins validos Logar com Escola",
+              "timedOut": null,
+              "duration": 33471,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.logar_instituicao(); // SELECIONA PROJETO\ncy.seleciona_projSimulado();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.verifica_dialog_contato_if();\ncy.contains('Olá, Escola Modelo 01'); // DESLOGAR\ncy.deslogar();",
+              "err": {},
+              "uuid": "faa4fa2f-7704-4279-a383-5f096f1e52b7",
+              "parentUUID": "cdbddf39-2390-4c23-82e2-bb6d0319b472",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Professor",
+              "fullTitle": "Logins validos Logar com Professor",
+              "timedOut": null,
+              "duration": 29564,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.logar_professor(); // SELECIONA PROJETO\ncy.contains('Simulado').click();\ncy.contains('CONFIRMAR').click();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.verifica_dialog_contato_if();\ncy.contains('Olá, Professor EF1'); // DESLOGAR\ncy.deslogar();",
+              "err": {},
+              "uuid": "99c925a0-bc81-4655-862a-e1d4579656dd",
+              "parentUUID": "cdbddf39-2390-4c23-82e2-bb6d0319b472",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Regional",
+              "fullTitle": "Logins validos Logar com Regional",
+              "timedOut": null,
+              "duration": 28032,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.logar_regional();\ncy.wait(10000);\nexpect(cy.url().should('include', '/app/painel'));\ncy.verifica_dialog_contato_if();\ncy.contains('Olá, CABULA'); // DESLOGAR\ncy.deslogar();",
+              "err": {},
+              "uuid": "e0f5aa58-e052-4484-81c8-6d758a6cd9d1",
+              "parentUUID": "cdbddf39-2390-4c23-82e2-bb6d0319b472",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Trocar projeto",
+              "fullTitle": "Logins validos Trocar projeto",
+              "timedOut": null,
+              "duration": 39640,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.logar_instituicao(); // SELECIONA PROJETO\ncy.seleciona_projSimulado();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.verifica_dialog_contato_if();\ncy.contains('Olá, Escola Modelo 01'); //TROCAR PROJETO\ncy.trocar_projeto(); // DESLOGAR\ncy.deslogar();",
+              "err": {},
+              "uuid": "598885e8-c9a8-4867-8b47-19cc233b5fae",
+              "parentUUID": "cdbddf39-2390-4c23-82e2-bb6d0319b472",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b92157f0-063c-4b0c-ac7a-c46339e9a4ec",
+            "faa4fa2f-7704-4279-a383-5f096f1e52b7",
+            "99c925a0-bc81-4655-862a-e1d4579656dd",
+            "e0f5aa58-e052-4484-81c8-6d758a6cd9d1",
+            "598885e8-c9a8-4867-8b47-19cc233b5fae"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 170014,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

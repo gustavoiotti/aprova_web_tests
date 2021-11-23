@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-06-03T20:11:09.613Z",
+    "end": "2020-06-03T20:11:41.900Z",
+    "duration": 32287,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "da7a3a62-4710-4363-8be7-95ffa2d34887",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/Perfil_Professor/perfil_professor.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/Perfil_Professor/perfil_professor.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "298046f0-5e83-4f08-9875-69446aa31e9b",
+          "title": "Teste com Professor no Aprova",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar login Professor",
+              "fullTitle": "Teste com Professor no Aprova Acessar login Professor",
+              "timedOut": null,
+              "duration": 15004,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.ap_logar_professor();",
+              "err": {},
+              "uuid": "f1003706-c33b-4a99-90cd-fea6a4c20814",
+              "parentUUID": "298046f0-5e83-4f08-9875-69446aa31e9b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testar menus",
+              "fullTitle": "Teste com Professor no Aprova Testar menus",
+              "timedOut": null,
+              "duration": 14144,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ap_acessa_menu_calendario();\ncy.ap_acessa_menu_resultados();\ncy.ap_acessa_menu_status_aplicacao();\ncy.ap_acessa_menu_simulados();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#mat-select-1 > .mat-select-trigger > .mat-select-value`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#mat-select-1 > .mat-select-trigger > .mat-select-value`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:114:13)",
+                "diff": null
+              },
+              "uuid": "70e9c739-6110-4e19-b087-be1a8b5fbada",
+              "parentUUID": "298046f0-5e83-4f08-9875-69446aa31e9b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1003706-c33b-4a99-90cd-fea6a4c20814"
+          ],
+          "failures": [
+            "70e9c739-6110-4e19-b087-be1a8b5fbada"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29148,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

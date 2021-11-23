@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-06-03T20:12:10.146Z",
+    "end": "2020-06-03T20:12:39.729Z",
+    "duration": 29583,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a0394811-fc7e-4adc-ab01-d1a7dc147ecb",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/login_valido.spec.js",
+      "file": "cypress/integration/Aprova_cyp/login_valido.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "74457fdd-9cdc-4fe5-a34a-8c4f9f89d7ac",
+          "title": "Teste cases de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logar com Rede",
+              "fullTitle": "Teste cases de login Logar com Rede",
+              "timedOut": null,
+              "duration": 16410,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').type('Rede');\ncy.get('#mat-input-1').type('at04');\ncy.get('.submit-button').click(); //cy.get('[data-cy=submit]').click()\n// SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(4)').click();\ncy.get('.btn-projeto-dialog > .btn').click(); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {},
+              "uuid": "292ee763-8698-4228-9a47-8ca8afcc87fc",
+              "parentUUID": "74457fdd-9cdc-4fe5-a34a-8c4f9f89d7ac",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Escola",
+              "fullTitle": "Teste cases de login Logar com Escola",
+              "timedOut": null,
+              "duration": 5687,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//cy.viewport(1366, 768)\ncy.get('#mat-input-0').type('demo1');\ncy.get('#mat-input-1').type('deo1');\ncy.get('.submit-button').click(); //cy.get('[data-cy=submit]').click()\n// SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(4)').click();\ncy.get('.btn-projeto-dialog > .btn').click(); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.lista-projetos-dialog > :nth-child(4)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.lista-projetos-dialog > :nth-child(4)`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/login_valido.spec.js:27:8)",
+                "diff": null
+              },
+              "uuid": "9b2adfb0-10a5-4b4c-9c0d-b4d610f8dbe7",
+              "parentUUID": "74457fdd-9cdc-4fe5-a34a-8c4f9f89d7ac",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Professor",
+              "fullTitle": "Teste cases de login Logar com Professor",
+              "timedOut": null,
+              "duration": 5865,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//cy.viewport(1366, 768)\ncy.get('#mat-input-0').type('293124@avalia.com');\ncy.get('#mat-input-1').type('ZTVEHB');\ncy.get('.submit-button').click(); //cy.get('[data-cy=submit]').click()\n// SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(3)').click();\ncy.get('.btn-projeto-dialog > .btn').click(); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.lista-projetos-dialog > :nth-child(3)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.lista-projetos-dialog > :nth-child(3)`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/login_valido.spec.js:40:8)",
+                "diff": null
+              },
+              "uuid": "5413413a-f166-4459-87af-f500b89cbaed",
+              "parentUUID": "74457fdd-9cdc-4fe5-a34a-8c4f9f89d7ac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "292ee763-8698-4228-9a47-8ca8afcc87fc"
+          ],
+          "failures": [
+            "9b2adfb0-10a5-4b4c-9c0d-b4d610f8dbe7",
+            "5413413a-f166-4459-87af-f500b89cbaed"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 27962,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

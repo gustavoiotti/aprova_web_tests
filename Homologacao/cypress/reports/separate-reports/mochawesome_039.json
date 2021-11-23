@@ -1,0 +1,262 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 9,
+    "passes": 8,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-18T21:51:49.918Z",
+    "end": "2020-08-18T21:53:16.283Z",
+    "duration": 86365,
+    "testsRegistered": 9,
+    "passPercent": 88.88888888888889,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "42acec1d-0f13-4574-8922-c81abae45be6",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/menu_regional.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/menu_regional.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+          "title": "Teste dos menus por usuário REGIONAL",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus com usuário de Regional",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Menus com usuário de Regional",
+              "timedOut": null,
+              "duration": 33462,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_regional(); //cy.seleciona_projSimulado()\ncy.wait(10000);\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, CABULA')).to.exist;",
+              "err": {},
+              "uuid": "34c33f11-0712-402e-94bd-c6e960510170",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Painel",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Painel",
+              "timedOut": null,
+              "duration": 265,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_painel_rede();",
+              "err": {},
+              "uuid": "de94d752-febc-4384-aeda-d20177d156cd",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados Gerais",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Resultados Gerais",
+              "timedOut": null,
+              "duration": 5937,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_resultados(); //cy.wait(10000)",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#distribuicao-nivel-acerto`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#distribuicao-nivel-acerto`, but never found it.\n    at Context.eval (http://aprovabrasil-hmg.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:132:13)",
+                "diff": null
+              },
+              "uuid": "c70255a9-2331-4f93-b833-fbdeea61cf5c",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados por Habilidade",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Resultados por Habilidade",
+              "timedOut": null,
+              "duration": 664,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_resultados_habilidades_rede();",
+              "err": {},
+              "uuid": "298b4fbf-c9d4-4aaf-a1b8-3a3dca538b60",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Relatório por Habilidade",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Relatório por Habilidade",
+              "timedOut": null,
+              "duration": 6043,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_relatorio_habilidade2();",
+              "err": {},
+              "uuid": "5c93a3a6-5686-4e43-8565-78a379cdecd3",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Relatório por Aluno",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Relatório por Aluno",
+              "timedOut": null,
+              "duration": 4085,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_relatorio_aluno2();",
+              "err": {},
+              "uuid": "1cd39e02-2272-4a47-a499-b70277160e40",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Relatório por Questões Abertas",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Relatório por Questões Abertas",
+              "timedOut": null,
+              "duration": 3812,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_relatorio_questoesAbertas2();",
+              "err": {},
+              "uuid": "3f6eccb6-2f45-4198-a660-dceb80ad79ec",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo FAQ",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Conteúdo FAQ",
+              "timedOut": null,
+              "duration": 973,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_ajuda();",
+              "err": {},
+              "uuid": "c39c910f-cf6c-410f-bdc4-855701a115d7",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Acompanhamento",
+              "fullTitle": "Teste dos menus por usuário REGIONAL Acessar Acompanhamento",
+              "timedOut": null,
+              "duration": 28660,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_regional(); //cy.seleciona_projSimulado()\ncy.wait(10000);\ncy.testa_acompanhamento();",
+              "err": {},
+              "uuid": "4a5d736c-5cdb-4a31-ba21-e5a762befe14",
+              "parentUUID": "1cc3212e-0e3a-40f6-b162-152370ce9b6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "34c33f11-0712-402e-94bd-c6e960510170",
+            "de94d752-febc-4384-aeda-d20177d156cd",
+            "298b4fbf-c9d4-4aaf-a1b8-3a3dca538b60",
+            "5c93a3a6-5686-4e43-8565-78a379cdecd3",
+            "1cd39e02-2272-4a47-a499-b70277160e40",
+            "3f6eccb6-2f45-4198-a660-dceb80ad79ec",
+            "c39c910f-cf6c-410f-bdc4-855701a115d7",
+            "4a5d736c-5cdb-4a31-ba21-e5a762befe14"
+          ],
+          "failures": [
+            "c70255a9-2331-4f93-b833-fbdeea61cf5c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 83901,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

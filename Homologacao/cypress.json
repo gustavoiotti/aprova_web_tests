@@ -1,0 +1,12 @@
+{
+  "viewportWidth": 1366,
+  "viewportHeight": 768,
+  "video" : false,
+  "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "reportDir": "cypress/reports/separate-reports",
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
+}

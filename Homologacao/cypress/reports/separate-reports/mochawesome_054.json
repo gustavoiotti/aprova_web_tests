@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-25T22:29:57.936Z",
+    "end": "2020-08-25T22:30:44.891Z",
+    "duration": 46955,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "afe542ab-7e9e-43b0-91af-b2b1b1e0f82a",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/teste.spec.js",
+      "file": "cypress/integration/Aprova_cyp/teste.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37ca6952-d753-4658-9e3d-e01350449bfe",
+          "title": "Trocar projeto",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "trocar projeto",
+              "fullTitle": "Trocar projeto trocar projeto",
+              "timedOut": null,
+              "duration": 44870,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_instituicao();\ncy.seleciona_projSimulado();\ncy.wait(5000);\ncy.trocar_projeto();",
+              "err": {},
+              "uuid": "e122e1b6-1d97-447a-8617-0120f278689c",
+              "parentUUID": "37ca6952-d753-4658-9e3d-e01350449bfe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e122e1b6-1d97-447a-8617-0120f278689c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 44870,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-26T00:38:50.422Z",
+    "end": "2020-06-26T00:40:03.780Z",
+    "duration": 73358,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d56248d7-a959-4970-862d-65f513ae9550",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/login_invalido.spec.js",
+      "file": "cypress/integration/Aprova_cyp/login_invalido.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00396a7f-cfec-4e12-bd11-9d58039942f2",
+          "title": "Teste cases de login invalido",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logar com Usuário e Senha incorretos",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário e Senha incorretos",
+              "timedOut": null,
+              "duration": 23084,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').type('dema1');\ncy.get('#mat-input-1').type('dea1');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(400);\n}); // VERIFICA MENSAGEM DE ERRO\nif (cy.get('.mat-simple-snackbar').contains('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')) {\n  // CONFIRMA MSG DE ERRO -> CLICA BOTÃO 'OK'\n  cy.get('.mat-simple-snackbar-action > .ng-tns-c22-8').click();\n}",
+              "err": {},
+              "uuid": "e5baa83f-6ac8-45d9-8199-74b9d5168663",
+              "parentUUID": "00396a7f-cfec-4e12-bd11-9d58039942f2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário vazio e Senha incorreta",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário vazio e Senha incorreta",
+              "timedOut": null,
+              "duration": 17016,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').should('have.value', '');\ncy.get('#mat-input-1').type('dea1');\ncy.get('.submit-button').should('be.disabled');",
+              "err": {},
+              "uuid": "c9673b74-bb3b-4c6a-809b-bba6984c5cec",
+              "parentUUID": "00396a7f-cfec-4e12-bd11-9d58039942f2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário e Senha vazios",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário e Senha vazios",
+              "timedOut": null,
+              "duration": 7596,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').should('have.value', '');\ncy.get('#mat-input-1').should('have.value', '');\ncy.get('.submit-button').should('be.disabled');",
+              "err": {},
+              "uuid": "030d0871-3d87-4f2f-b7c0-9b84b6ba9086",
+              "parentUUID": "00396a7f-cfec-4e12-bd11-9d58039942f2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário incorreto e Senha correta",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário incorreto e Senha correta",
+              "timedOut": null,
+              "duration": 23951,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://aprovabrasil-hmg.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').type('dema1');\ncy.get('#mat-input-1').type('deo1');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(400); // VERIFICA MENSAGEM DE ERRO\n  if (cy.get('.mat-simple-snackbar').contains('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')) {\n    // CONFIRMA MSG DE ERRO -> CLICA BOTÃO 'OK'\n    cy.get('.mat-simple-snackbar-action > .ng-tns-c22-8').click();\n  }\n});\nit('Logar com Usuário correto e Senha incorreta', function () {\n  cy.visit('http://aprovabrasil-hmg.azurewebsites.net'); //cy.viewport(1366, 768)\n  cy.get('.btn').click();\n  cy.get('#mat-input-0').type('demo1');\n  cy.get('#mat-input-1').type('dea1');\n  cy.server();\n  cy.route('POST', '**/api/v1/usuarios/login').as('postV1');\n  cy.get('.submit-button').click();\n  cy.wait('@postV1').then(function (xhr) {\n    expect(xhr.status).be.eq(400);\n  }); // VERIFICA MENSAGEM DE ERRO\n  if (cy.get('.mat-simple-snackbar').contains('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')) {\n    // CONFIRMA MSG DE ERRO -> CLICA BOTÃO 'OK'\n    cy.get('.mat-simple-snackbar-action > .ng-tns-c22-8').click();\n  }\n});",
+              "err": {},
+              "uuid": "0023eda1-6e33-4824-b715-edd81c74d4aa",
+              "parentUUID": "00396a7f-cfec-4e12-bd11-9d58039942f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e5baa83f-6ac8-45d9-8199-74b9d5168663",
+            "c9673b74-bb3b-4c6a-809b-bba6984c5cec",
+            "030d0871-3d87-4f2f-b7c0-9b84b6ba9086",
+            "0023eda1-6e33-4824-b715-edd81c74d4aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 71647,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

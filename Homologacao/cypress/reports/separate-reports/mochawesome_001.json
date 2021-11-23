@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-03T20:11:43.886Z",
+    "end": "2020-06-03T20:12:08.396Z",
+    "duration": 24510,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "410c635f-932f-4bb4-959c-f4c3ffaa62ce",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/login_invalido.spec.js",
+      "file": "cypress/integration/Aprova_cyp/login_invalido.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "972413ca-368c-411d-a4cb-90a37df4ccfe",
+          "title": "Teste cases de login invalido",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logar com Usuário e Senha incorretos",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário e Senha incorretos",
+              "timedOut": null,
+              "duration": 9920,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').type('dema1');\ncy.get('#mat-input-1').type('dea1');\ncy.get('.submit-button').click(); //cy.get('.mat-simple-snackbar').should('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')\n// VERIFICA MENSAGEM DE ERRO\nif (cy.get('.mat-simple-snackbar').contains('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')) {\n  // CONFIRMA MSG DE ERRO -> CLICA BOTÃO 'OK'\n  cy.get('.mat-simple-snackbar-action > .ng-tns-c22-8').click();\n}",
+              "err": {},
+              "uuid": "f45a49e7-767c-4846-911e-dd51217d4aa8",
+              "parentUUID": "972413ca-368c-411d-a4cb-90a37df4ccfe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário vazio e Senha incorreta",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário vazio e Senha incorreta",
+              "timedOut": null,
+              "duration": 2725,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').should('have.value', '');\ncy.get('#mat-input-1').type('dea1');\ncy.get('.submit-button').should('be.disabled'); //cy.get('.mat-simple-snackbar').should('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')\n// VERIFICA MENSAGEM DE ERRO\n//cy.get('#mat-error-0').should('contain', 'Login é obrigatório')",
+              "err": {},
+              "uuid": "5e7cd9eb-2887-4881-8fec-3ff897c244ef",
+              "parentUUID": "972413ca-368c-411d-a4cb-90a37df4ccfe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário e Senha vazios",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário e Senha vazios",
+              "timedOut": null,
+              "duration": 2685,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').should('have.value', '');\ncy.get('#mat-input-1').should('have.value', '');\ncy.get('.submit-button').should('be.disabled');",
+              "err": {},
+              "uuid": "69b0dcca-883d-4806-83ae-cf827f8e53a7",
+              "parentUUID": "972413ca-368c-411d-a4cb-90a37df4ccfe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário incorreto e Senha correta",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário incorreto e Senha correta",
+              "timedOut": null,
+              "duration": 3951,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').type('dema1');\ncy.get('#mat-input-1').type('deo1');\ncy.get('.submit-button').click(); //cy.get('.mat-simple-snackbar').should('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')\n// VERIFICA MENSAGEM DE ERRO\nif (cy.get('.mat-simple-snackbar').contains('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')) {\n  // CONFIRMA MSG DE ERRO -> CLICA BOTÃO 'OK'\n  cy.get('.mat-simple-snackbar-action > .ng-tns-c22-8').click();\n}",
+              "err": {},
+              "uuid": "0fc32fd2-1c14-4ffe-a5fb-471be3c326c8",
+              "parentUUID": "972413ca-368c-411d-a4cb-90a37df4ccfe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Usuário correto e Senha errada",
+              "fullTitle": "Teste cases de login invalido Logar com Usuário correto e Senha errada",
+              "timedOut": null,
+              "duration": 3338,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net'); //cy.viewport(1366, 768)\ncy.get('.btn').click();\ncy.get('#mat-input-0').type('demo1');\ncy.get('#mat-input-1').type('dea1');\ncy.get('.submit-button').click(); //cy.get('.mat-simple-snackbar').should('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')\n// VERIFICA MENSAGEM DE ERRO\nif (cy.get('.mat-simple-snackbar').contains('Usuário ou senha não coincidem com um usuário válido ou sua conta foi bloqueada!')) {\n  // CONFIRMA MSG DE ERRO -> CLICA BOTÃO 'OK'\n  cy.get('.mat-simple-snackbar-action > .ng-tns-c22-8').click();\n}",
+              "err": {},
+              "uuid": "e7bd5244-c30e-41f9-8a4c-4d51ffd9ae7b",
+              "parentUUID": "972413ca-368c-411d-a4cb-90a37df4ccfe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f45a49e7-767c-4846-911e-dd51217d4aa8",
+            "5e7cd9eb-2887-4881-8fec-3ff897c244ef",
+            "69b0dcca-883d-4806-83ae-cf827f8e53a7",
+            "0fc32fd2-1c14-4ffe-a5fb-471be3c326c8",
+            "e7bd5244-c30e-41f9-8a4c-4d51ffd9ae7b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22619,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

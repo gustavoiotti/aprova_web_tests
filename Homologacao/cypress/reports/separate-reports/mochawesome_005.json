@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-06-10T00:21:45.045Z",
+    "end": "2020-06-10T00:21:46.636Z",
+    "duration": 1591,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "904cfaa7-c5ef-4a4f-a64e-73e208e8fa10",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/Perfil_Professor/perfil_professor.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/Perfil_Professor/perfil_professor.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "51244db5-348e-4733-be13-b2684a8992f9",
+          "title": "Teste com Professor no Aprova",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar login Professor",
+              "fullTitle": "Teste com Professor no Aprova Acessar login Professor",
+              "timedOut": null,
+              "duration": 727,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.ap_logar_professor();",
+              "err": {
+                "message": "TypeError: cy.ap_logar_professor is not a function",
+                "estack": "TypeError: cy.ap_logar_professor is not a function\n    at Context.eval (http://localhost:54970/__cypress/tests?p=cypress/integration/Aprova_Brasil/Perfil_Professor/perfil_professor.spec.js:7:8)",
+                "diff": null
+              },
+              "uuid": "39d28117-8251-4630-aac0-6091a2011f97",
+              "parentUUID": "51244db5-348e-4733-be13-b2684a8992f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testar menus",
+              "fullTitle": "Teste com Professor no Aprova Testar menus",
+              "timedOut": null,
+              "duration": 703,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ap_acessa_menu_calendario();\ncy.ap_acessa_menu_resultados();\ncy.ap_acessa_menu_status_aplicacao();\ncy.ap_acessa_menu_simulados();",
+              "err": {
+                "message": "TypeError: cy.ap_acessa_menu_calendario is not a function",
+                "estack": "TypeError: cy.ap_acessa_menu_calendario is not a function\n    at Context.eval (http://localhost:54970/__cypress/tests?p=cypress/integration/Aprova_Brasil/Perfil_Professor/perfil_professor.spec.js:10:8)",
+                "diff": null
+              },
+              "uuid": "36f26e39-8bbf-4a5f-80d0-229260375d9d",
+              "parentUUID": "51244db5-348e-4733-be13-b2684a8992f9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "39d28117-8251-4630-aac0-6091a2011f97",
+            "36f26e39-8bbf-4a5f-80d0-229260375d9d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1430,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

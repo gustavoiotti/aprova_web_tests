@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-23T20:57:40.521Z",
+    "end": "2020-06-23T20:58:31.124Z",
+    "duration": 50603,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "54069218-585f-4836-a2d1-bd23621254f4",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/menu_conteudo.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/menu_conteudo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "330ee108-323b-433d-a4e8-2b2c0b48eb7a",
+          "title": "Teste dos menus por usuário CONTEÚDO",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus com usuário de Instituição CONTEÚDO",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Menus com usuário de Instituição CONTEÚDO",
+              "timedOut": null,
+              "duration": 40551,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_conteudo(); // cy.seleciona_projSimulado()\ncy.wait(10000);\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, ABAETE')).to.exist;",
+              "err": {},
+              "uuid": "298492dc-9a9c-48a5-ba6c-637816988a4c",
+              "parentUUID": "330ee108-323b-433d-a4e8-2b2c0b48eb7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo Livros Digitais",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Acessar Conteúdo Livros Digitais",
+              "timedOut": null,
+              "duration": 542,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_livrodigital();",
+              "err": {},
+              "uuid": "d4742b42-b34a-4610-9594-e0468b813df5",
+              "parentUUID": "330ee108-323b-433d-a4e8-2b2c0b48eb7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo Atv Complementares",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Acessar Conteúdo Atv Complementares",
+              "timedOut": null,
+              "duration": 6407,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_projConteudo_atvComplementar();",
+              "err": {},
+              "uuid": "602495f0-8bba-4b6e-a643-f85d5d4e6c17",
+              "parentUUID": "330ee108-323b-433d-a4e8-2b2c0b48eb7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo FAQ",
+              "fullTitle": "Teste dos menus por usuário CONTEÚDO Acessar Conteúdo FAQ",
+              "timedOut": null,
+              "duration": 887,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_ajuda();",
+              "err": {},
+              "uuid": "67223c6d-b129-4a20-8c45-55b21808444b",
+              "parentUUID": "330ee108-323b-433d-a4e8-2b2c0b48eb7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "298492dc-9a9c-48a5-ba6c-637816988a4c",
+            "d4742b42-b34a-4610-9594-e0468b813df5",
+            "602495f0-8bba-4b6e-a643-f85d5d4e6c17",
+            "67223c6d-b129-4a20-8c45-55b21808444b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 48387,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

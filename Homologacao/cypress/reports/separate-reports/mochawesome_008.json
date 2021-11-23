@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-23T20:59:55.436Z",
+    "end": "2020-06-23T21:00:45.109Z",
+    "duration": 49673,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc6e62bb-d024-4beb-b062-78323dadbb8d",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/menu_professor.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/menu_professor.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+          "title": "Teste dos menus por usuário PROFESSOR",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus com usuário de Professor",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Menus com usuário de Professor",
+              "timedOut": null,
+              "duration": 38648,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_professor(); //cy.seleciona_projSimulado()\ncy.get('.lista-projetos-dialog > :nth-child(3)').click();\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(10000);\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Professor EF1')).to.exist;",
+              "err": {},
+              "uuid": "6c3bc56a-9e3f-4ab5-aa1b-395dd0b545f2",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Painel",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Acessar Painel",
+              "timedOut": null,
+              "duration": 296,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_painel();",
+              "err": {},
+              "uuid": "ffc31c71-c396-4953-af84-73a20b99d283",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Simulados",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Acessar Simulados",
+              "timedOut": null,
+              "duration": 1609,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_simulados();",
+              "err": {},
+              "uuid": "93a3a183-e745-40ea-9250-0c1520657d8c",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados Gerais",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Acessar Resultados Gerais",
+              "timedOut": null,
+              "duration": 2730,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_resultados();",
+              "err": {},
+              "uuid": "c40a6ed4-8c27-4f8b-a942-6b918b271675",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados por Habilidade",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Acessar Resultados por Habilidade",
+              "timedOut": null,
+              "duration": 674,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_resultados_habilidades_rede();",
+              "err": {},
+              "uuid": "694c7730-3509-4dc4-9875-847b6b0a61e8",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo Livros Digitais",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Acessar Conteúdo Livros Digitais",
+              "timedOut": null,
+              "duration": 2804,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_livrodigital();",
+              "err": {},
+              "uuid": "8c856d5b-84f4-4316-a30f-57dcb5370993",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Conteúdo FAQ",
+              "fullTitle": "Teste dos menus por usuário PROFESSOR Acessar Conteúdo FAQ",
+              "timedOut": null,
+              "duration": 979,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_ajuda();",
+              "err": {},
+              "uuid": "04783463-cd5c-4d6a-8c13-3d6e2d565e5f",
+              "parentUUID": "05c29bf0-3be2-4438-b51c-c3eeb6ed8ebe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6c3bc56a-9e3f-4ab5-aa1b-395dd0b545f2",
+            "ffc31c71-c396-4953-af84-73a20b99d283",
+            "93a3a183-e745-40ea-9250-0c1520657d8c",
+            "c40a6ed4-8c27-4f8b-a942-6b918b271675",
+            "694c7730-3509-4dc4-9875-847b6b0a61e8",
+            "8c856d5b-84f4-4316-a30f-57dcb5370993",
+            "04783463-cd5c-4d6a-8c13-3d6e2d565e5f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 47740,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

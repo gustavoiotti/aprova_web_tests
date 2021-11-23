@@ -1,0 +1,362 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 12,
+    "passes": 0,
+    "pending": 0,
+    "failures": 12,
+    "start": "2020-06-03T20:12:49.883Z",
+    "end": "2020-06-03T20:13:58.338Z",
+    "duration": 68455,
+    "testsRegistered": 12,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd56b09f-7837-4ead-8805-510516460509",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/simulados_filtro.spec.js",
+      "file": "cypress/integration/Aprova_cyp/simulados_filtro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "03862906-b306-451f-ad26-063679d24996",
+          "title": "Teste do menu de simulados nos perfís",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Simulados com Escola",
+              "fullTitle": "Teste do menu de simulados nos perfís Simulados com Escola",
+              "timedOut": null,
+              "duration": 578,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net');\ncy.logar_escola();",
+              "err": {
+                "message": "TypeError: cy.logar_escola is not a function",
+                "estack": "TypeError: cy.logar_escola is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:7:8)",
+                "diff": null
+              },
+              "uuid": "c2437550-2abf-40b5-9e64-387830868958",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Simulados",
+              "fullTitle": "Teste do menu de simulados nos perfís Acessar Simulados",
+              "timedOut": null,
+              "duration": 4581,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ap_acessa_menu_simulados();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/support/index.js:127:6)",
+                "diff": null
+              },
+              "uuid": "7f7124e8-4e7e-46ec-b278-6ce9a164a8b0",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Limpar Filtro",
+              "fullTitle": "Teste do menu de simulados nos perfís Limpar Filtro",
+              "timedOut": null,
+              "duration": 4514,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.aaf-panel-header-titulo > .clean').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.aaf-panel-header-titulo > .clean`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.aaf-panel-header-titulo > .clean`, but never found it.\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:13:8)",
+                "diff": null
+              },
+              "uuid": "c88d1bb4-951e-43a5-a272-5d73d3c5dd12",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Simulados Novamente",
+              "fullTitle": "Teste do menu de simulados nos perfís Acessar Simulados Novamente",
+              "timedOut": null,
+              "duration": 4746,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ap_acessa_menu_simulados();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/support/index.js:127:6)",
+                "diff": null
+              },
+              "uuid": "3d2d9ed5-3898-431a-8864-81adb7da7593",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar inserção de resultados",
+              "fullTitle": "Teste do menu de simulados nos perfís Acessar inserção de resultados",
+              "timedOut": null,
+              "duration": 7566,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// if(cy.get('.card-infos > .nome').contains('string', 'AI-LP-Simulado 1')){\n//     cy.contains('Inserir respostas').click()\n// } else (cy.get('.footer > :nth-child(1)').click())\n//cy.get('button').contains('Inserir respostas').click()\ncy.wait(3000);\ncy.get('.footer > :nth-child(1) > .mat-button-wrapper').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.footer > :nth-child(1) > .mat-button-wrapper`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.footer > :nth-child(1) > .mat-button-wrapper`, but never found it.\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:24:8)",
+                "diff": null
+              },
+              "uuid": "5be2cf6b-796a-4445-a3b1-b01fce464720",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Selecionar Aluno",
+              "fullTitle": "Teste do menu de simulados nos perfís Selecionar Aluno",
+              "timedOut": null,
+              "duration": 7546,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(3000); //cy.contains('Brenda Caroline Rodrigues').click()\ncy.get('mat-row.aluno:nth-child(4)').click();\ncy.get('#resposta_0 > :nth-child(3)').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `mat-row.aluno:nth-child(4)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `mat-row.aluno:nth-child(4)`, but never found it.\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:29:8)",
+                "diff": null
+              },
+              "uuid": "c2be4cbd-b62f-497c-9cd0-033a6f51e571",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Simulados com Professor",
+              "fullTitle": "Teste do menu de simulados nos perfís Simulados com Professor",
+              "timedOut": null,
+              "duration": 6899,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net');\ncy.ap_logar_professor();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#mat-input-0`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#mat-input-0`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:71:6)",
+                "diff": null
+              },
+              "uuid": "66ed6732-f6f0-4142-aa42-11cbd028d25e",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Simulados",
+              "fullTitle": "Teste do menu de simulados nos perfís Acessar Simulados",
+              "timedOut": null,
+              "duration": 4822,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ap_acessa_menu_simulados();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:127:6)",
+                "diff": null
+              },
+              "uuid": "fb2ce283-a9d5-4eac-b9a6-26dfb9e9595d",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Limpar Filtro",
+              "fullTitle": "Teste do menu de simulados nos perfís Limpar Filtro",
+              "timedOut": null,
+              "duration": 4736,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.aaf-panel-header-titulo > .clean').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.aaf-panel-header-titulo > .clean`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.aaf-panel-header-titulo > .clean`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:40:8)",
+                "diff": null
+              },
+              "uuid": "ae75a12c-c36e-44e3-9073-4fe1c99ac320",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Simulados Novamente",
+              "fullTitle": "Teste do menu de simulados nos perfís Acessar Simulados Novamente",
+              "timedOut": null,
+              "duration": 4748,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.ap_acessa_menu_simulados();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#menu-simulados`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/support/index.js:127:6)",
+                "diff": null
+              },
+              "uuid": "ba7be122-0364-4d28-8671-0ed1c88708cf",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar inserção de resultados",
+              "fullTitle": "Teste do menu de simulados nos perfís Acessar inserção de resultados",
+              "timedOut": null,
+              "duration": 7842,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// if(cy.get('.card-infos > .nome').contains('string', 'AI-LP-Simulado 1')){\n//     cy.contains('Inserir respostas').click()\n// } else (cy.get('.footer > :nth-child(1)').click())\n//cy.get('button').contains('Inserir respostas').click()\ncy.wait(3000);\ncy.get('.footer > :nth-child(1) > .mat-button-wrapper').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.footer > :nth-child(1) > .mat-button-wrapper`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.footer > :nth-child(1) > .mat-button-wrapper`, but never found it.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:51:8)",
+                "diff": null
+              },
+              "uuid": "cb1c71a4-bb20-4fad-aefb-1dfef3004842",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Selecionar Aluno",
+              "fullTitle": "Teste do menu de simulados nos perfís Selecionar Aluno",
+              "timedOut": null,
+              "duration": 7765,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(3000);\ncy.contains('Brenda Caroline Rodrigues').click(); //cy.get('mat-row.aluno:nth-child(4)').click()\ncy.get('#resposta_0 > :nth-child(3)').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Brenda Caroline Rodrigues' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Brenda Caroline Rodrigues' but never did.\n    at Context.eval (https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net/__cypress/tests?p=cypress/integration/Aprova_cyp/simulados_filtro.spec.js:55:8)",
+                "diff": null
+              },
+              "uuid": "5dea232a-cb7f-4b5c-bcf3-35f305cfea5b",
+              "parentUUID": "03862906-b306-451f-ad26-063679d24996",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c2437550-2abf-40b5-9e64-387830868958",
+            "7f7124e8-4e7e-46ec-b278-6ce9a164a8b0",
+            "c88d1bb4-951e-43a5-a272-5d73d3c5dd12",
+            "3d2d9ed5-3898-431a-8864-81adb7da7593",
+            "5be2cf6b-796a-4445-a3b1-b01fce464720",
+            "c2be4cbd-b62f-497c-9cd0-033a6f51e571",
+            "66ed6732-f6f0-4142-aa42-11cbd028d25e",
+            "fb2ce283-a9d5-4eac-b9a6-26dfb9e9595d",
+            "ae75a12c-c36e-44e3-9073-4fe1c99ac320",
+            "ba7be122-0364-4d28-8671-0ed1c88708cf",
+            "cb1c71a4-bb20-4fad-aefb-1dfef3004842",
+            "5dea232a-cb7f-4b5c-bcf3-35f305cfea5b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 66343,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 12,
+    "passes": 0,
+    "pending": 0,
+    "failures": 12,
+    "start": "2020-06-03T20:12:41.381Z",
+    "end": "2020-06-03T20:12:48.283Z",
+    "duration": 6902,
+    "testsRegistered": 12,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6d6ab6bc-27f4-497d-9b4b-a15160f5dd9c",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/menus_painel.spec.js",
+      "file": "cypress/integration/Aprova_cyp/menus_painel.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+          "title": "Teste dos menus no painel principal por usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus com usuário de Rede",
+              "fullTitle": "Teste dos menus no painel principal por usuário Menus com usuário de Rede",
+              "timedOut": null,
+              "duration": 611,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net');\ncy.logar_rede();",
+              "err": {
+                "message": "TypeError: cy.logar_rede is not a function",
+                "estack": "TypeError: cy.logar_rede is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:8:8)",
+                "diff": null
+              },
+              "uuid": "3b8f1154-b86d-4779-8e82-e7424c0e8f58",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Calendário",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Calendário",
+              "timedOut": null,
+              "duration": 535,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_calendario();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_calendario is not a function",
+                "estack": "TypeError: cy.acessa_menu_calendario is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:11:8)",
+                "diff": null
+              },
+              "uuid": "39ed1113-5c24-4f96-9331-515db94d7a52",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Resultados",
+              "timedOut": null,
+              "duration": 526,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_resultados();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_resultados is not a function",
+                "estack": "TypeError: cy.acessa_menu_resultados is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:14:8)",
+                "diff": null
+              },
+              "uuid": "49656794-203c-4af1-bb43-0991c55311c4",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Status Aplicação",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Status Aplicação",
+              "timedOut": null,
+              "duration": 529,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_status_aplicacao();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_status_aplicacao is not a function",
+                "estack": "TypeError: cy.acessa_menu_status_aplicacao is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:17:8)",
+                "diff": null
+              },
+              "uuid": "7195c85c-b3ae-4e06-bb11-1c15229d6938",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Menus com usuário de Escola",
+              "fullTitle": "Teste dos menus no painel principal por usuário Menus com usuário de Escola",
+              "timedOut": null,
+              "duration": 603,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net');\ncy.logar_escola();",
+              "err": {
+                "message": "TypeError: cy.logar_escola is not a function",
+                "estack": "TypeError: cy.logar_escola is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:21:8)",
+                "diff": null
+              },
+              "uuid": "a77932ea-1ee2-46dd-8428-023a60b117a4",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Calendário",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Calendário",
+              "timedOut": null,
+              "duration": 519,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_calendario();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_calendario is not a function",
+                "estack": "TypeError: cy.acessa_menu_calendario is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:24:8)",
+                "diff": null
+              },
+              "uuid": "f280e261-f087-4830-8205-5c24d1841a9b",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Resultados",
+              "timedOut": null,
+              "duration": 527,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_resultados();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_resultados is not a function",
+                "estack": "TypeError: cy.acessa_menu_resultados is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:27:8)",
+                "diff": null
+              },
+              "uuid": "36dc5075-6638-4e58-84fa-58d5b2a90a1c",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Status Aplicação",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Status Aplicação",
+              "timedOut": null,
+              "duration": 499,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_status_aplicacao();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_status_aplicacao is not a function",
+                "estack": "TypeError: cy.acessa_menu_status_aplicacao is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:30:8)",
+                "diff": null
+              },
+              "uuid": "8461a520-4ed5-40c0-a8eb-891cba75c030",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Menus com usuário de Professor",
+              "fullTitle": "Teste dos menus no painel principal por usuário Menus com usuário de Professor",
+              "timedOut": null,
+              "duration": 495,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://web-avaliadigital-aprovabrasil-prd.azurewebsites.net');\ncy.logar_professor();",
+              "err": {
+                "message": "TypeError: cy.logar_professor is not a function",
+                "estack": "TypeError: cy.logar_professor is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:34:8)",
+                "diff": null
+              },
+              "uuid": "8a3ed142-7e9a-485b-95c1-bd29afe0bb1c",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Calendário",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Calendário",
+              "timedOut": null,
+              "duration": 539,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_calendario();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_calendario is not a function",
+                "estack": "TypeError: cy.acessa_menu_calendario is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:37:8)",
+                "diff": null
+              },
+              "uuid": "4f1eb832-79a5-4a86-a3cf-f3e282a69344",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Resultados",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Resultados",
+              "timedOut": null,
+              "duration": 609,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_resultados();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_resultados is not a function",
+                "estack": "TypeError: cy.acessa_menu_resultados is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:40:8)",
+                "diff": null
+              },
+              "uuid": "23b21860-11f8-4556-a161-a767efc26e26",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessar Status Aplicação",
+              "fullTitle": "Teste dos menus no painel principal por usuário Acessar Status Aplicação",
+              "timedOut": null,
+              "duration": 499,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_menu_status_aplicacao();",
+              "err": {
+                "message": "TypeError: cy.acessa_menu_status_aplicacao is not a function",
+                "estack": "TypeError: cy.acessa_menu_status_aplicacao is not a function\n    at Context.eval (http://localhost:53097/__cypress/tests?p=cypress/integration/Aprova_cyp/menus_painel.spec.js:43:8)",
+                "diff": null
+              },
+              "uuid": "4632e6a4-17f6-40ea-86c0-b1e1a57f4778",
+              "parentUUID": "1bfcaaba-dad9-4db0-be74-715ef06f5e7b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3b8f1154-b86d-4779-8e82-e7424c0e8f58",
+            "39ed1113-5c24-4f96-9331-515db94d7a52",
+            "49656794-203c-4af1-bb43-0991c55311c4",
+            "7195c85c-b3ae-4e06-bb11-1c15229d6938",
+            "a77932ea-1ee2-46dd-8428-023a60b117a4",
+            "f280e261-f087-4830-8205-5c24d1841a9b",
+            "36dc5075-6638-4e58-84fa-58d5b2a90a1c",
+            "8461a520-4ed5-40c0-a8eb-891cba75c030",
+            "8a3ed142-7e9a-485b-95c1-bd29afe0bb1c",
+            "4f1eb832-79a5-4a86-a3cf-f3e282a69344",
+            "23b21860-11f8-4556-a161-a767efc26e26",
+            "4632e6a4-17f6-40ea-86c0-b1e1a57f4778"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6491,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-23T21:06:38.442Z",
+    "end": "2020-06-23T21:10:14.383Z",
+    "duration": 215941,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "709ad715-4660-4c20-9b1a-454a2f9cac87",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_cyp/login_valido.spec.js",
+      "file": "cypress/integration/Aprova_cyp/login_valido.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "45aa1c82-bb87-4314-8268-38a4f9bf1226",
+          "title": "Teste de logins validos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logar com Rede",
+              "fullTitle": "Teste de logins validos Logar com Rede",
+              "timedOut": null,
+              "duration": 47055,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#mat-input-0').type('Rede');\ncy.get('#mat-input-1').type('at04');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n}); // SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(4)').click();\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Rede Demonstração'); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {},
+              "uuid": "a5d3730d-2659-47f5-8604-2aa6e0decaab",
+              "parentUUID": "45aa1c82-bb87-4314-8268-38a4f9bf1226",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Escola",
+              "fullTitle": "Teste de logins validos Logar com Escola",
+              "timedOut": null,
+              "duration": 38143,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#mat-input-0').type('demo1');\ncy.get('#mat-input-1').type('H2VE3G');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n}); // SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(4)').click();\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Escola Modelo 01'); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {},
+              "uuid": "c2c222af-a948-4ffc-92b6-a68132ac0dec",
+              "parentUUID": "45aa1c82-bb87-4314-8268-38a4f9bf1226",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Professor",
+              "fullTitle": "Teste de logins validos Logar com Professor",
+              "timedOut": null,
+              "duration": 39109,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#mat-input-0').type('293124@avalia.com');\ncy.get('#mat-input-1').type('ZTVEHB');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n}); // SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(3)').click();\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Professor EF1'); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {},
+              "uuid": "0f885e6f-27d8-48c2-8671-09c62e19c4b0",
+              "parentUUID": "45aa1c82-bb87-4314-8268-38a4f9bf1226",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logar com Regional",
+              "fullTitle": "Teste de logins validos Logar com Regional",
+              "timedOut": null,
+              "duration": 42041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#mat-input-0').type('890163@avalia.com');\ncy.get('#mat-input-1').type('7YF7QD');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n});\ncy.wait(10000);\nexpect(cy.url().should('include', '/app/painel'));\ncy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, CABULA'); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {},
+              "uuid": "1f5e47f8-d556-48e5-8800-86767ad55689",
+              "parentUUID": "45aa1c82-bb87-4314-8268-38a4f9bf1226",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Trocar projeto",
+              "fullTitle": "Teste de logins validos Trocar projeto",
+              "timedOut": null,
+              "duration": 47660,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#mat-input-0').type('demo1');\ncy.get('#mat-input-1').type('H2VE3G');\ncy.server();\ncy.route('POST', '**/api/v1/usuarios/login').as('postV1');\ncy.get('.submit-button').click();\ncy.wait('@postV1').then(function (xhr) {\n  expect(xhr.status).be.eq(200);\n}); // SELECIONA PROJETO\ncy.get('.lista-projetos-dialog > :nth-child(4)').click();\ncy.get('.btn-projeto-dialog > .btn').click();\ncy.wait(10000);\ncy.url().should('include', '/app/painel');\ncy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, Escola Modelo 01'); //TROCAR PROJETO\ncy.get('#app-toolbar > mat-toolbar > div > div > div:nth-child(1) > div.logo-rede.ng-star-inserted > div:nth-child(2) > div').click();\ncy.get('#mat-dialog-1 > app-selecionar-projeto > div > div.lista-projetos-dialog.projetos-dialog-atuais.ng-star-inserted > mat-card:nth-child(3)').click();\ncy.get('#mat-dialog-1 > app-selecionar-projeto > div > div.btn-projeto-dialog > button.btn.btn-blue.mat-stroked-button.mat-button').click();\ncy.get('#app-toolbar > mat-toolbar > div > div > div:nth-child(1) > div.logo-rede.ng-star-inserted > div:nth-child(2) > div').contains('2020 - AVALIAÇÃO DIAGNÓSTICA'); // DESLOGAR\ncy.get('.user-button > .ml-14').click();\ncy.get('.mat-menu-item').click();",
+              "err": {},
+              "uuid": "721020d8-684f-415c-bbf1-b3f52b4b69fe",
+              "parentUUID": "45aa1c82-bb87-4314-8268-38a4f9bf1226",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a5d3730d-2659-47f5-8604-2aa6e0decaab",
+            "c2c222af-a948-4ffc-92b6-a68132ac0dec",
+            "0f885e6f-27d8-48c2-8671-09c62e19c4b0",
+            "1f5e47f8-d556-48e5-8800-86767ad55689",
+            "721020d8-684f-415c-bbf1-b3f52b4b69fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 214008,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

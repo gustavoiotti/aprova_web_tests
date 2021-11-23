@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-23T20:44:18.880Z",
+    "end": "2020-09-23T20:44:47.364Z",
+    "duration": 28484,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "af23d5b7-ad43-4286-b4fa-1b2b5066eb5b",
+      "title": "",
+      "fullFile": "cypress/integration/Aprova_Brasil/menu_conteudo.spec.js",
+      "file": "cypress/integration/Aprova_Brasil/menu_conteudo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1a5eee2b-9e34-4754-8830-549c3f1ac0bf",
+          "title": "Menus - CONTEÚDO",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Menus - Instituição CONTEÚDO",
+              "fullTitle": "Menus - CONTEÚDO Menus - Instituição CONTEÚDO",
+              "timedOut": null,
+              "duration": 22183,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.acessa_aprova();\ncy.logar_conteudo(); // cy.seleciona_projSimulado()\n//cy.pular_cadastro();\n// cy.wait(10000)\n// cy.get('body').then((body) => {\n//     if (body.find('label:contains(CANCELAR)')){\n//             cy.get('.btn-cancelar').click()            \n//     } else {\n//         cy.get('.page-header-title').should('be.visible')\n//     }\n// })\ncy.verifica_dialog_contato_if();\nexpect(cy.get('.username-wrapper > [fxhide=\"\"]').contains('Olá, ABAETE')).to.exist;",
+              "err": {},
+              "uuid": "dd88e03a-3b7c-4559-916d-1dcc71100453",
+              "parentUUID": "1a5eee2b-9e34-4754-8830-549c3f1ac0bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessa Conteúdo Livros Digitais",
+              "fullTitle": "Menus - CONTEÚDO Acessa Conteúdo Livros Digitais",
+              "timedOut": null,
+              "duration": 355,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_conteudo_livrodigital();",
+              "err": {},
+              "uuid": "27f18551-fb97-46fa-94ed-30a089653c1a",
+              "parentUUID": "1a5eee2b-9e34-4754-8830-549c3f1ac0bf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acessa Conteúdo Atv. Complementares",
+              "fullTitle": "Menus - CONTEÚDO Acessa Conteúdo Atv. Complementares",
+              "timedOut": null,
+              "duration": 3218,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.testa_projConteudo_atvComplementar();",
+              "err": {},
+              "uuid": "f7d416aa-ffe3-4516-9c37-08b29747fbdc",
+              "parentUUID": "1a5eee2b-9e34-4754-8830-549c3f1ac0bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd88e03a-3b7c-4559-916d-1dcc71100453",
+            "27f18551-fb97-46fa-94ed-30a089653c1a",
+            "f7d416aa-ffe3-4516-9c37-08b29747fbdc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25756,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
